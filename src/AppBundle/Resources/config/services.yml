@@ -1,0 +1,10 @@
+services:
+    acme_hello.topic_sample_service:
+        class: AppBundle\Topic\AcmeTopic
+        tags:
+            - { name: gos_web_socket.topic }
+
+    acme_hello.rpc_sample_service:
+        class: AppBundle\Rpc\AcmeRpc
+        tags:
+            - { name: gos_web_socket.rpc }
