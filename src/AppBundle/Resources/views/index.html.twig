@@ -26,9 +26,16 @@
 
             session.publish("acme/channel", {msg: "This is a message!"});
 
+            session.publish("acme/channel", {msg: "I'm leaving, I will not see the next message"});
+
             session.unsubscribe("acme/channel");
 
             session.publish("acme/channel", {msg: "I won't see this"});
+
+            session.subscribe("acme/channel", function(uri, payload){
+                console.log("Received message", payload.msg);
+            });
+            session.publish("acme/channel", {msg: "I'm back!"});
         });
 
         websocket.on("socket/disconnect", function(error){

@@ -4,6 +4,9 @@ acme_topic:
         callback: 'acme.topic' #related to the getName() of your topic
 
 acme_rpc:
-    channel: sample/sum
+    channel: sample/{method}
     handler:
         callback: 'acme.rpc' #related to the getName() or your RPC service
+    requirements:
+        method:
+            pattern: "[a-z_]+"
