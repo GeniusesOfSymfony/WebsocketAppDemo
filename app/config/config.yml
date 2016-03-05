@@ -78,4 +78,4 @@ gos_web_socket:
         host: 127.0.0.1   #The host ip to bind to
         router:
             resources:
-                - @AppBundle/Resources/config/pubsub/routing.yml
+                - '@AppBundle/Resources/config/pubsub/routing.yml'
