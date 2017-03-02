@@ -77,7 +77,7 @@ gos_web_socket:
         port: 1337        #The port the socket server will listen on
         host: 127.0.0.1   #The host ip to bind to
         router:
-            resources:websocket_bundle.middleware.sample
+            resources:
                 - '@AppBundle/Resources/config/pubsub/routing.yml'
         handshake_middleware:
              - '@websocket_bundle.middleware.sample'
