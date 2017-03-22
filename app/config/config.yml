@@ -79,3 +79,5 @@ gos_web_socket:
         router:
             resources:
                 - '@AppBundle/Resources/config/pubsub/routing.yml'
+        handshake_middleware:
+             - '@websocket_bundle.middleware.sample'

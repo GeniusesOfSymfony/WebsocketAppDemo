@@ -8,3 +8,10 @@ services:
         class: AppBundle\Rpc\AcmeRpc
         tags:
             - { name: gos_web_socket.rpc }
+
+    websocket_bundle.middleware.sample:
+        class:        AppBundle\Service\SampleMiddleware
+        arguments:
+            - '@event_dispatcher'
+            - '%gos_web_socket.firewall%'
+            - '@security.token_storage'
