@@ -1,8 +1,9 @@
 Gos Websocket Demo
 ==================
 
-- Start websocket bundle `php app/console gos:websocket:server`
-- Go to 127.0.0.1/app_dev.php/app/example
+- Start socket service in term `php bin/console gos:websocket:server`
+- Start web service in a second term `php bin/console server:run`
+- Go to 127.0.0.1/app/example
 - Look at the console browser
 - Play with the code :)
 

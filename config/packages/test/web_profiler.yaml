@@ -1,0 +1,9 @@
+imports:
+    - { resource: ../dev/web_profiler.yaml }
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+framework:
+    profiler: { collect: false }

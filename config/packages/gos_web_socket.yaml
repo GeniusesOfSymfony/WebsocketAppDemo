@@ -1,0 +1,7 @@
+gos_web_socket:
+    server:
+        port: '%env(GOS_WEB_SOCKET_PORT)%'        #The port the socket server will listen on
+        host: '%env(GOS_WEB_SOCKET_HOST)%'   #The host ip to bind to
+        router:
+            resources:
+                - '%kernel.project_dir%/config/gos_routes/routes.yaml'
