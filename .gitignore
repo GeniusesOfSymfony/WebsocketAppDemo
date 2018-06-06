@@ -1,12 +1,21 @@
-/web/bundles/
-/app/bootstrap.php.cache
-/app/cache/*
-/app/config/parameters.yml
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-/app/phpunit.xml
-/build/
-/vendor/
+/.idea
 /bin/
 /composer.phar
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+!/var/cache/.gitkeep
+!/var/log/.gitkeep
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+###< symfony/phpunit-bridge ###
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###

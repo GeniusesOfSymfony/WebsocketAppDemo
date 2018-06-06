@@ -1,0 +1,7 @@
+imports:
+    - { resource: ../dev/framework.yaml }
+
+framework:
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
