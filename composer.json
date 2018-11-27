@@ -1,64 +1,43 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "gos/websocket-demo",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Demo application for the GosWebSocketBundle",
     "autoload": {
         "psr-4": { "": "src/" },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
     "require": {
-        "php": ">=5.5",
-        "symfony/symfony": "^4.0",
-        "doctrine/orm": "^2.5",
-        "doctrine/doctrine-bundle": "^1.6",
-        "doctrine/doctrine-cache-bundle": "^1.2",
-        "twig/extensions": "^1.2",
-        "symfony/swiftmailer-bundle": "^2.3",
-        "gos/web-socket-bundle": "=1.8.12-rc1",
-        "symfony/monolog-bundle": "^3.1",
-        "symfony/console": "^4.0"        
-    },
-    "require-dev": {
-        "symfony/debug": "^4.0"
+        "php": ">=7.2",
+        "doctrine/doctrine-bundle": "^1.9.1",
+        "doctrine/orm": "^2.6.3",
+        "gos/web-socket-bundle": "^1.9@dev",
+        "sensio/framework-extra-bundle": "^5.2.2",
+        "symfony/monolog-bundle": "^3.3.1",
+        "symfony/swiftmailer-bundle": "^3.2.4",
+        "symfony/symfony": "4.1.*",
+        "twig/extensions": "^1.5.3",
+        "twig/twig": "^2.5"
     },
     "scripts": {
-        "post-root-package-install": [
-            "SymfonyStandard\\Composer::hookRootPackageInstall"
-        ],
         "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "@php bin/console cache:clear",
+            "@php bin/console assets:install --symlink --relative web"
         ],
         "post-update-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "@php bin/console cache:clear",
+            "@php bin/console assets:install --symlink --relative web"
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "sort-packages": true
     },
-    "prefer-stable": true,
-    "minimum-stability": "RC",
     "extra": {
         "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
         "symfony-web-dir": "web",
-        "symfony-assets-install": "relative",
-        "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
-        },
-        "branch-alias": {
-            "dev-master": "2.6-dev"
-        }
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative"
     }
 }

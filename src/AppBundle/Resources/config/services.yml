@@ -1,10 +1,2 @@
-services:
-    acme_hello.topic_sample_service:
-        class: AppBundle\Topic\AcmeTopic
-        tags:
-            - { name: gos_web_socket.topic }
-
-    acme_hello.rpc_sample_service:
-        class: AppBundle\Rpc\AcmeRpc
-        tags:
-            - { name: gos_web_socket.rpc }
+# The bundle's services are autoconfigured in the app's main services.yml file
+services: ~
