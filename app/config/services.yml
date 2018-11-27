@@ -29,18 +29,6 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    # RPC handlers need to have the `gos_web_socket.rpc` tag, so by convention we will tag all handlers in the directory
-    AppBundle\Rpc\:
-        resource: '../../src/AppBundle/Rpc'
-        tags:
-            - { name: gos_web_socket.rpc }
-
-    # RPC handlers need to have the `gos_web_socket.topic` tag, so by convention we will tag all handlers in the directory
-    AppBundle\Topic\:
-        resource: '../../src/AppBundle/Topic'
-        tags:
-            - { name: gos_web_socket.topic }
-
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:
     #     arguments:
