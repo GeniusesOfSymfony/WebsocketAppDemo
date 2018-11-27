@@ -11,7 +11,7 @@
         "php": ">=7.2",
         "doctrine/doctrine-bundle": "^1.9.1",
         "doctrine/orm": "^2.6.3",
-        "gos/web-socket-bundle": "^1.9@dev",
+        "gos/web-socket-bundle": "dev-master",
         "sensio/framework-extra-bundle": "^5.2.2",
         "symfony/monolog-bundle": "^3.3.1",
         "symfony/swiftmailer-bundle": "^3.2.4",
