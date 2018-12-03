@@ -1309,12 +1309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeniusesOfSymfony/WebSocketBundle.git",
-                "reference": "02777db5502d24099e8854846de88052fa0b8854"
+                "reference": "392164fd34164fd20a37249ba17b1d7d0a8815f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/02777db5502d24099e8854846de88052fa0b8854",
-                "reference": "02777db5502d24099e8854846de88052fa0b8854",
+                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/392164fd34164fd20a37249ba17b1d7d0a8815f2",
+                "reference": "392164fd34164fd20a37249ba17b1d7d0a8815f2",
                 "shasum": ""
             },
             "require": {
@@ -1393,7 +1393,7 @@
                 "io",
                 "websocket"
             ],
-            "time": "2018-11-30T16:29:27+00:00"
+            "time": "2018-12-03T02:12:43+00:00"
         },
         {
             "name": "gos/websocket-client",
