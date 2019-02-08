@@ -1312,12 +1312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeniusesOfSymfony/WebSocketBundle.git",
-                "reference": "fc7136529aac1988c1282e57faecc32cb883cf04"
+                "reference": "cfecbab2a2f6bf2c106188781ff7b54c9daecbec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/fc7136529aac1988c1282e57faecc32cb883cf04",
-                "reference": "fc7136529aac1988c1282e57faecc32cb883cf04",
+                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/cfecbab2a2f6bf2c106188781ff7b54c9daecbec",
+                "reference": "cfecbab2a2f6bf2c106188781ff7b54c9daecbec",
                 "shasum": ""
             },
             "require": {
@@ -1375,7 +1375,7 @@
                 "io",
                 "websocket"
             ],
-            "time": "2019-02-06T17:46:26+00:00"
+            "time": "2019-02-07T23:13:59+00:00"
         },
         {
             "name": "gos/websocket-client",
@@ -2206,27 +2206,28 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8.35 || ^5.7 || ^6.4"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
             },
             "suggest": {
                 "ext-event": "~1.0 for ExtEventLoop",
-                "ext-pcntl": "For signal handling support when using the StreamSelectLoop"
+                "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
+                "ext-uv": "* for ExtUvLoop"
             },
             "type": "library",
             "autoload": {
@@ -2243,7 +2244,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-07-11T14:37:46+00:00"
+            "time": "2019-02-07T16:19:49+00:00"
         },
         {
             "name": "react/promise",
