@@ -14,9 +14,6 @@
             "config/routes/annotations.yaml"
         ]
     },
-    "doctrine/cache": {
-        "version": "v1.8.0"
-    },
     "doctrine/lexer": {
         "version": "1.0.2"
     },

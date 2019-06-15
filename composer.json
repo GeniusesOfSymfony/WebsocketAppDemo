@@ -1,43 +1,67 @@
 {
-    "name": "gos/websocket-demo",
-    "license": "MIT",
     "type": "project",
-    "description": "Demo application for the GosWebSocketBundle",
-    "autoload": {
-        "psr-4": { "": "src/" },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
-    },
+    "license": "proprietary",
     "require": {
-        "php": ">=7.2",
-        "doctrine/doctrine-bundle": "^1.10",
-        "doctrine/orm": "^2.6.3",
-        "gos/web-socket-bundle": "dev-master",
-        "sensio/framework-extra-bundle": "^5.2.2",
+        "php": "^7.2",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "gos/web-socket-bundle": "2.*@dev",
+        "symfony/apache-pack": "^1.0",
+        "symfony/asset": "4.3.*",
+        "symfony/console": "4.3.*",
+        "symfony/dotenv": "4.3.*",
+        "symfony/flex": "^1.2.7",
+        "symfony/framework-bundle": "4.3.*",
         "symfony/monolog-bundle": "^3.3.1",
-        "symfony/swiftmailer-bundle": "^3.2.4",
-        "symfony/symfony": "4.2.*",
-        "twig/extensions": "^1.5.3",
-        "twig/twig": "^2.5"
+        "symfony/security-bundle": "4.3.*",
+        "symfony/serializer-pack": "*",
+        "symfony/twig-bundle": "4.3.*",
+        "symfony/yaml": "4.3.*"
     },
-    "scripts": {
-        "post-install-cmd": [
-            "@php bin/console cache:clear",
-            "@php bin/console assets:install --symlink --relative web"
-        ],
-        "post-update-cmd": [
-            "@php bin/console cache:clear",
-            "@php bin/console assets:install --symlink --relative web"
-        ]
+    "require-dev": {
+        "symfony/debug-pack": "*",
+        "symfony/profiler-pack": "*",
+        "symfony/web-server-bundle": "4.3.*"
     },
     "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
         "sort-packages": true
     },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "replace": {
+        "paragonie/random_compat": "*",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
     "extra": {
-        "symfony-app-dir": "app",
-        "symfony-bin-dir": "bin",
-        "symfony-var-dir": "var",
-        "symfony-web-dir": "web",
-        "symfony-tests-dir": "tests",
-        "symfony-assets-install": "relative"
+        "symfony": {
+            "allow-contrib": false,
+            "require": "4.3.*"
+        }
     }
 }
