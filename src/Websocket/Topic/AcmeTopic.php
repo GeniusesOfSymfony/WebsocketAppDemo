@@ -43,13 +43,13 @@ final class AcmeTopic implements TopicInterface
      * This will receive any Publish requests for this topic.
      *
      * @param ConnectionInterface $connection
-     * @param                     $Topic topic
+     * @param Topic $topic
      * @param WampRequest $request
-     * @param                     $event
+     * @param mixed $event The event data
      * @param array $exclude
-     * @param array $eligibles
+     * @param array $eligible
      *
-     * @return mixed|void
+     * @return void
      */
     public function onPublish(
         ConnectionInterface $connection,
@@ -78,7 +78,7 @@ final class AcmeTopic implements TopicInterface
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return 'acme.topic';
     }
