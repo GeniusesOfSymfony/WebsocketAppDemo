@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block javascripts %}
-    <script type="text/javascript" src="{{ asset('bundles/goswebsocket/js/vendor/autobahn.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/goswebsocket/js/gos_web_socket_client.js') }}"></script>
+    <script src="{{ asset('bundles/goswebsocket/js/vendor/autobahn.min.js') }}"></script>
+    <script src="{{ asset('bundles/goswebsocket/js/websocket.min.js') }}"></script>
 
     <script type="text/javascript">
         var websocket = WS.connect("ws://127.0.0.1:1337");
