@@ -25,15 +25,3 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-
-    # RPC handlers need to have the `gos_web_socket.rpc` tag, so by convention we will tag all handlers in the directory
-    App\Websocket\Rpc\:
-        resource: '../src/Websocket/Rpc'
-        tags:
-            - { name: gos_web_socket.rpc }
-
-    # Topic handlers need to have the `gos_web_socket.topic` tag, so by convention we will tag all handlers in the directory
-    App\Websocket\Topic\:
-        resource: '../src/Websocket/Topic'
-        tags:
-            - { name: gos_web_socket.topic }
