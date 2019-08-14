@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2928dba290d560275bd4c423f0043b92",
+    "content-hash": "5cc3b19adad38c1b4d65717d6fa94f87",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -365,16 +365,16 @@
         },
         {
             "name": "gos/web-socket-bundle",
-            "version": "1.x-dev",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeniusesOfSymfony/WebSocketBundle.git",
-                "reference": "d5445a50add5257825afdc92959969e6bb1e98bc"
+                "reference": "ad77a7a63fc15da7bc665acd53980ee5314c0eab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/d5445a50add5257825afdc92959969e6bb1e98bc",
-                "reference": "d5445a50add5257825afdc92959969e6bb1e98bc",
+                "url": "https://api.github.com/repos/GeniusesOfSymfony/WebSocketBundle/zipball/ad77a7a63fc15da7bc665acd53980ee5314c0eab",
+                "reference": "ad77a7a63fc15da7bc665acd53980ee5314c0eab",
                 "shasum": ""
             },
             "require": {
@@ -383,20 +383,31 @@
                 "gos/websocket-client": "^0.1",
                 "ocramius/proxy-manager": "^1.0|^2.1",
                 "php": ">=7.2",
+                "psr/log": "^1.0",
                 "react/event-loop": "^1.0",
-                "symfony/framework-bundle": "^2.3|^3.0|^4.0"
+                "symfony/config": "^2.3|^3.0|^4.0",
+                "symfony/console": "^2.3|^3.0|^4.0",
+                "symfony/dependency-injection": "^2.3|^3.0|^4.0",
+                "symfony/event-dispatcher": "^2.3|^3.0|^4.0",
+                "symfony/http-foundation": "^2.3|^3.0|^4.0",
+                "symfony/http-kernel": "^2.3|^3.0|^4.0",
+                "symfony/security-core": "^2.3|^3.0|^4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.1"
             },
             "suggest": {
-                "doctrine/cache": "* to use doctrine/cache as a client driver",
-                "ext-amqp": "*",
-                "ext-libev": "*",
-                "ext-libevent": ">=0.0.5",
-                "ext-zmq": "*",
-                "symfony/cache": ">=3.1 to use symfony/cache as a client driver",
-                "symfony/proxy-manager-bridge": "~2.3"
+                "doctrine/cache": "^1.0 to use doctrine/cache as a client driver",
+                "ext-amqp": "* to use the amqp pusher",
+                "ext-zmq": "* to use the zmq pusher",
+                "gos/react-amqp": "^0.2 to use the amqp server push handler",
+                "predis/predis": "^1.0 to use Predis as a client driver",
+                "react/zmq": "^0.4 to use zmq server push handler",
+                "symfony/cache": "^3.1|^4.0 to use symfony/cache as a client driver",
+                "symfony/options-resolver": "^2.3|^3.0|^4.0 to use the pushers",
+                "symfony/serializer": "^2.3|^3.0|^4.0 to use the pushers",
+                "symfony/stopwatch": "^2.3|^3.0|^4.0 to use the data collectors",
+                "symfony/twig-bridge": "^2.3|^3.0|^4.0 to use the Twig extension"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -432,7 +443,7 @@
                 "io",
                 "websocket"
             ],
-            "time": "2019-08-11T22:15:55+00:00"
+            "time": "2019-08-14T22:49:18+00:00"
         },
         {
             "name": "gos/websocket-client",
@@ -4791,9 +4802,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gos/web-socket-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
