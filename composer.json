@@ -5,7 +5,7 @@
         "php": "^7.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "gos/web-socket-bundle": "2.*@dev",
+        "gos/web-socket-bundle": "^2.0@beta",
         "symfony/apache-pack": "^1.0.1",
         "symfony/asset": "4.3.*",
         "symfony/console": "4.3.*",
