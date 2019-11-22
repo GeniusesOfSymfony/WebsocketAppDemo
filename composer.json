@@ -20,8 +20,7 @@
     },
     "require-dev": {
         "symfony/debug-pack": "*",
-        "symfony/profiler-pack": "*",
-        "symfony/web-server-bundle": "*"
+        "symfony/profiler-pack": "*"
     },
     "config": {
         "preferred-install": {
