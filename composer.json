@@ -5,18 +5,18 @@
         "php": "^7.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "gos/web-socket-bundle": "^1.10",
+        "gos/web-socket-bundle": "^1.10.1",
         "symfony/apache-pack": "^1.0.1",
-        "symfony/asset": "4.3.*",
-        "symfony/console": "4.3.*",
-        "symfony/dotenv": "4.3.*",
-        "symfony/flex": "^1.4.5",
-        "symfony/framework-bundle": "4.3.*",
+        "symfony/asset": "*",
+        "symfony/console": "*",
+        "symfony/dotenv": "*",
+        "symfony/flex": "^1.4.8",
+        "symfony/framework-bundle": "*",
         "symfony/monolog-bundle": "^3.4",
-        "symfony/security-bundle": "4.3.*",
+        "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
-        "symfony/twig-bundle": "4.3.*",
-        "symfony/yaml": "4.3.*"
+        "symfony/twig-bundle": "*",
+        "symfony/yaml": "*"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
@@ -61,7 +61,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.3.*"
+            "require": "4.4.*"
         }
     }
 }

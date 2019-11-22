@@ -162,6 +162,9 @@
     "symfony/dotenv": {
         "version": "v4.3.1"
     },
+    "symfony/error-handler": {
+        "version": "v4.4.0"
+    },
     "symfony/event-dispatcher": {
         "version": "v4.3.1"
     },
