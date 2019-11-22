@@ -12,7 +12,7 @@
         "symfony/dotenv": "*",
         "symfony/flex": "^1.4.8",
         "symfony/framework-bundle": "*",
-        "symfony/monolog-bundle": "^3.4",
+        "symfony/monolog-bundle": "^3.5",
         "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
         "symfony/twig-bundle": "*",
@@ -21,7 +21,7 @@
     "require-dev": {
         "symfony/debug-pack": "*",
         "symfony/profiler-pack": "*",
-        "symfony/web-server-bundle": "4.3.*"
+        "symfony/web-server-bundle": "*"
     },
     "config": {
         "preferred-install": {
