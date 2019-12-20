@@ -5,6 +5,7 @@
         "php": "^7.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "gos/pubsub-router-bundle": "^2.0@beta",
         "gos/web-socket-bundle": "^2.0@rc",
         "symfony/apache-pack": "^1.0.1",
         "symfony/asset": "*",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7a6b69e7cf8c1034c141923b356f441",
+    "content-hash": "cd42936689727b21818288dbaf5b1fab",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -234,46 +234,47 @@
         },
         {
             "name": "gos/pubsub-router-bundle",
-            "version": "v1.4.1",
+            "version": "v2.0.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeniusesOfSymfony/PubSubRouterBundle.git",
-                "reference": "5d765fc0041cab2027661a04fd9279177177986d"
+                "reference": "77cf2604329d856dad502cfcd1f8c7e92c5e1853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeniusesOfSymfony/PubSubRouterBundle/zipball/5d765fc0041cab2027661a04fd9279177177986d",
-                "reference": "5d765fc0041cab2027661a04fd9279177177986d",
+                "url": "https://api.github.com/repos/GeniusesOfSymfony/PubSubRouterBundle/zipball/77cf2604329d856dad502cfcd1f8c7e92c5e1853",
+                "reference": "77cf2604329d856dad502cfcd1f8c7e92c5e1853",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2",
-                "symfony/config": "^3.4|^4.0|^5.0",
-                "symfony/console": "^3.4|^4.0|^5.0",
-                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/framework-bundle": "^3.4|^4.0|^5.0",
-                "symfony/http-foundation": "^3.4|^4.0|^5.0",
-                "symfony/http-kernel": "^3.4|^4.0|^5.0",
-                "symfony/yaml": "^3.4|^4.0|^5.0"
+                "symfony/config": "^4.4|^5.0",
+                "symfony/console": "^4.4|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/framework-bundle": "^4.4|^5.0",
+                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
+                "symfony/yaml": "^4.4|^5.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
-                "matthiasnoback/symfony-dependency-injection-test": "^3.0|^4.0",
-                "phpunit/phpunit": "^7.0|^8.0"
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "phpstan/extension-installer": "^1.0.3",
+                "phpstan/phpstan": "^0.12.3",
+                "phpstan/phpstan-phpunit": "^0.12.2",
+                "phpstan/phpstan-symfony": "^0.12.1",
+                "phpunit/phpunit": "^8.5"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Gos\\Bundle\\PubSubRouterBundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
+                    "Gos\\Bundle\\PubSubRouterBundle\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -295,7 +296,7 @@
                 "redis",
                 "zmq"
             ],
-            "time": "2019-11-22T17:55:43+00:00"
+            "time": "2019-12-18T02:51:18+00:00"
         },
         {
             "name": "gos/web-socket-bundle",
@@ -4720,6 +4721,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "gos/pubsub-router-bundle": 10,
         "gos/web-socket-bundle": 5
     },
     "prefer-stable": false,
