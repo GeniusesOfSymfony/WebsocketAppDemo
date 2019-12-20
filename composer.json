@@ -10,7 +10,7 @@
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/dotenv": "*",
-        "symfony/flex": "^1.4.8",
+        "symfony/flex": "^1.6",
         "symfony/framework-bundle": "*",
         "symfony/monolog-bundle": "^3.5",
         "symfony/security-bundle": "*",
