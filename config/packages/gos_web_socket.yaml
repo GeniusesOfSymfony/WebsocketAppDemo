@@ -4,4 +4,6 @@ gos_web_socket:
         host: 127.0.0.1   #The host ip to bind to
         router:
             resources:
-                - '%kernel.project_dir%/config/pubsub/routing.yaml'
+                -
+                    resource: '%kernel.project_dir%/config/pubsub/websocket/*'
+                    type: 'glob'
