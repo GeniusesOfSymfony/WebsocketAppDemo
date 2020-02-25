@@ -18,7 +18,7 @@ final class AcmeTopic implements TopicInterface
      *
      * @return void
      */
-    public function onSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request)
+    public function onSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request): void
     {
         // This will broadcast the message to ALL subscribers of this topic.
         $topic->broadcast(['msg' => $connection->resourceId.' has joined '.$topic->getId()]);
@@ -31,9 +31,9 @@ final class AcmeTopic implements TopicInterface
      * @param Topic $topic
      * @param WampRequest $request
      *
-     * @return voids
+     * @return void
      */
-    public function onUnSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request)
+    public function onUnSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request): void
     {
         //this will broadcast the message to ALL subscribers of this topic.
         $topic->broadcast(['msg' => $connection->resourceId.' has left '.$topic->getId()]);
@@ -58,7 +58,7 @@ final class AcmeTopic implements TopicInterface
         $event,
         array $exclude,
         array $eligible
-    ) {
+    ): void {
         /*
             $topic->getId() will contain the FULL requested uri, so you can proceed based on that
 
@@ -78,7 +78,7 @@ final class AcmeTopic implements TopicInterface
      *
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return 'acme.topic';
     }

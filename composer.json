@@ -2,7 +2,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "gos/web-socket-bundle": "^1.10.2",
@@ -23,6 +23,9 @@
         "symfony/profiler-pack": "*"
     },
     "config": {
+        "platform": {
+            "php": "7.4.3"
+        },
         "preferred-install": {
             "*": "dist"
         },
