@@ -6,7 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "gos/pubsub-router-bundle": "^2.2",
-        "gos/web-socket-bundle": "^2.3",
+        "gos/web-socket-bundle": "^3.0@dev",
         "symfony/apache-pack": "^1.0.1",
         "symfony/asset": "*",
         "symfony/console": "*",

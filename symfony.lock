@@ -47,9 +47,6 @@
     "monolog/monolog": {
         "version": "1.24.0"
     },
-    "ocramius/proxy-manager": {
-        "version": "2.1.1"
-    },
     "php": {
         "version": "7.4.3"
     },
