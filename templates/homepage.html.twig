@@ -9,7 +9,7 @@
     <script src="{{ asset('bundles/goswebsocket/js/websocket.min.js') }}"></script>
 
     <script type="text/javascript">
-        var websocket = WS.connect("ws://127.0.0.1:1337");
+        var websocket = WS.connect("ws://{{ gos_web_socket_server_host }}:{{ gos_web_socket_server_port }}");
 
         websocket.on("socket/connect", function (session) {
             session.subscribe("acme/channel", function (uri, payload) {
