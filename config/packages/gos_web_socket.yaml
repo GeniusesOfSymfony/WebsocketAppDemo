@@ -3,8 +3,8 @@ parameters:
     # This allows you to run cache:warmup even if your
     # environment variables are not available yet.
     # You should not need to change this value.
-    env(GOS_WEB_SOCKET_SERVER_PORT): '127.0.0.1'
-    env(GOS_WEB_SOCKET_SERVER_IP): 1337
+    env(GOS_WEB_SOCKET_SERVER_IP): '127.0.0.1'
+    env(GOS_WEB_SOCKET_SERVER_PORT): 1337
 
 gos_web_socket:
     server:
