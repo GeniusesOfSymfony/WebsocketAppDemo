@@ -5,30 +5,30 @@
         "php": "^7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/annotations": "^1.0",
-        "gos/pubsub-router-bundle": "^2.2",
-        "gos/web-socket-bundle": "^3.0@dev",
-        "phpdocumentor/reflection-docblock": "^3.0|^4.0",
+        "doctrine/annotations": "^1.11.1",
+        "gos/pubsub-router-bundle": "^2.3",
+        "gos/web-socket-bundle": "^3.5",
+        "phpdocumentor/reflection-docblock": "^5.2.2",
         "symfony/apache-pack": "^1.0.1",
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/dotenv": "*",
         "symfony/flex": "^1.10",
         "symfony/framework-bundle": "*",
-        "symfony/monolog-bundle": "^3.5",
-        "symfony/property-access": "5.0.*",
-        "symfony/property-info": "5.0.*",
+        "symfony/monolog-bundle": "^3.6",
+        "symfony/property-access": "*",
+        "symfony/property-info": "*",
         "symfony/security-bundle": "*",
-        "symfony/serializer": "5.0.*",
+        "symfony/serializer": "*",
         "symfony/twig-bundle": "*",
         "symfony/yaml": "*"
     },
     "require-dev": {
-        "easycorp/easy-log-handler": "^1.0.7",
-        "symfony/debug-bundle": "^5.0",
-        "symfony/stopwatch": "^5.0",
-        "symfony/var-dumper": "^5.0",
-        "symfony/web-profiler-bundle": "^5.0"
+        "easycorp/easy-log-handler": "^1.0.9",
+        "symfony/debug-bundle": "*",
+        "symfony/stopwatch": "*",
+        "symfony/var-dumper": "*",
+        "symfony/web-profiler-bundle": "*"
     },
     "config": {
         "platform": {
@@ -73,7 +73,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.0.*"
+            "require": "5.1.*"
         }
     }
 }
