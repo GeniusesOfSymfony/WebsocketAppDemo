@@ -24,7 +24,6 @@
         "symfony/yaml": "*"
     },
     "require-dev": {
-        "easycorp/easy-log-handler": "^1.0.9",
         "symfony/debug-bundle": "*",
         "symfony/stopwatch": "*",
         "symfony/var-dumper": "*",
