@@ -20,6 +20,7 @@
         "symfony/monolog-bundle": "^3.7",
         "symfony/property-access": "*",
         "symfony/property-info": "*",
+        "symfony/runtime": "*",
         "symfony/security-bundle": "*",
         "symfony/serializer": "*",
         "symfony/twig-bundle": "*",
@@ -74,7 +75,8 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.2.*"
+            "require": "5.3.*"
         }
-    }
+    },
+    "minimum-stability": "beta"
 }
