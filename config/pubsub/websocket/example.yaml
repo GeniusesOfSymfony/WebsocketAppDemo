@@ -1,9 +1,0 @@
-acme_topic:
-    channel: acme/channel
-    handler: 'acme.topic' #related to the getName() of your topic
-
-acme_rpc:
-    channel: sample/{method}
-    handler: 'acme.rpc' #related to the getName() or your RPC service
-    requirements:
-        method: "[a-z_]+"

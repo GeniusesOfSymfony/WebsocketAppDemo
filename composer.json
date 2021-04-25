@@ -1,21 +1,23 @@
 {
+    "name": "gos/websocket-demo",
+    "description": "Simple demo application for the GosWebSocketBundle",
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/annotations": "^1.11.1",
-        "gos/pubsub-router-bundle": "^2.3",
-        "gos/web-socket-bundle": "^3.5",
+        "doctrine/annotations": "^1.12.1",
+        "gos/pubsub-router-bundle": "^2.5",
+        "gos/web-socket-bundle": "^3.7.1",
         "phpdocumentor/reflection-docblock": "^5.2.2",
         "symfony/apache-pack": "^1.0.1",
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/dotenv": "*",
-        "symfony/flex": "^1.10",
+        "symfony/flex": "^1.12.2",
         "symfony/framework-bundle": "*",
-        "symfony/monolog-bundle": "^3.6",
+        "symfony/monolog-bundle": "^3.7",
         "symfony/property-access": "*",
         "symfony/property-info": "*",
         "symfony/security-bundle": "*",
@@ -31,7 +33,7 @@
     },
     "config": {
         "platform": {
-            "php": "7.4.12"
+            "php": "8.0.3"
         },
         "preferred-install": {
             "*": "dist"
@@ -72,7 +74,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.1.*"
+            "require": "5.2.*"
         }
     }
 }

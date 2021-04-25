@@ -9,30 +9,12 @@ use Ratchet\Wamp\Topic;
 
 final class AcmeTopic implements TopicInterface
 {
-    /**
-     * This will receive any Subscription requests for this topic.
-     *
-     * @param ConnectionInterface $connection
-     * @param Topic $topic
-     * @param WampRequest $request
-     *
-     * @return void
-     */
     public function onSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request): void
     {
         // This will broadcast the message to ALL subscribers of this topic.
         $topic->broadcast(['msg' => $connection->resourceId.' has joined '.$topic->getId()]);
     }
 
-    /**
-     * This will receive any UnSubscription requests for this topic.
-     *
-     * @param ConnectionInterface $connection
-     * @param Topic $topic
-     * @param WampRequest $request
-     *
-     * @return void
-     */
     public function onUnSubscribe(ConnectionInterface $connection, Topic $topic, WampRequest $request): void
     {
         //this will broadcast the message to ALL subscribers of this topic.
@@ -40,16 +22,7 @@ final class AcmeTopic implements TopicInterface
     }
 
     /**
-     * This will receive any Publish requests for this topic.
-     *
-     * @param ConnectionInterface $connection
-     * @param Topic $topic
-     * @param WampRequest $request
      * @param mixed $event The event data
-     * @param array $exclude
-     * @param array $eligible
-     *
-     * @return void
      */
     public function onPublish(
         ConnectionInterface $connection,
@@ -73,11 +46,6 @@ final class AcmeTopic implements TopicInterface
         );
     }
 
-    /**
-     * Like RPC is will use to prefix the channel
-     *
-     * @return string
-     */
     public function getName(): string
     {
         return 'acme.topic';
